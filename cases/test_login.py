@@ -12,7 +12,6 @@ class TestLogin:
         self.login.get_token()
         # print(self.login.get_token())
 
-    # 调试
     def test_change_signature(self):
         r = requests.post("http://game.dreamreworld.com/api/acc/v1/profile/set",
                           data={"token": self.login.get_token(),
@@ -23,3 +22,5 @@ class TestLogin:
         print(json.dumps(r.json(), indent=2, ensure_ascii=False))
         assert r.status_code == 200
 
+    def test_chat(self):
+        pass
