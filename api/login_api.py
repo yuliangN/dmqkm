@@ -7,7 +7,7 @@ class Login(BaseApi):
     def get_token(self):
         r = requests.post("http://tx-bj-pt-uat-service01.reworldgame.com:8048/acc/v1/login/password",
                           data={
-                              "accountName": "13911112027",
+                              "accountName": "13911112028",
                               "password": "qwe123",
                               "sign": "daimaqiankun.sign",
                               "deviceId": "15615615616",

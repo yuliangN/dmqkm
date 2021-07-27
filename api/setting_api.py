@@ -6,7 +6,7 @@ class Settings():
     # 成功-修改用户签名数字
     def changeSignature(self):
         path = '/acc/v1/profile/set'
-        data = {"token": "047922b5-80a9-40bc-aa1a-a1705d8c4732_09",
+        data = {"token": "5b7a4416-304a-4aed-bf0f-4f6111e89892_09",
                 "selfUserCode": "27292686996733952",
                 "deviceId": "49500186-2b6d-60b6-2c40-add6f224ada4",
                 "sign": "daimaqian.sign",
@@ -18,7 +18,7 @@ class Settings():
     # 成功 - 修改用户签名文字
     def changeSignatureletter(self):
         path = '/acc/v1/profile/set'
-        data = {"token": "047922b5-80a9-40bc-aa1a-a1705d8c4732_09",
+        data = {"token": "5b7a4416-304a-4aed-bf0f-4f6111e89892_09",
                 "selfUserCode": "27292686996733952",
                 "deviceId": "49500186-2b6d-60b6-2c40-add6f224ada4",
                 "sign": "daimaqian.sign",
@@ -30,7 +30,7 @@ class Settings():
     # 成功 - 修改用户签名特殊符号
     def changeSignatureSymbol(self):
         path = '/acc/v1/profile/set'
-        data = {"token": "047922b5-80a9-40bc-aa1a-a1705d8c4732_09",
+        data = {"token": "5b7a4416-304a-4aed-bf0f-4f6111e89892_09",
                 "selfUserCode": "27292686996733952",
                 "deviceId": "49500186-2b6d-60b6-2c40-add6f224ada4",
                 "sign": "daimaqian.sign",
@@ -42,7 +42,7 @@ class Settings():
     # 失败-签名敏感字校验
     def changeSignaFail(self):
         path = '/acc/v1/profile/set'
-        data = {"token": "047922b5-80a9-40bc-aa1a-a1705d8c4732_09",
+        data = {"token": "5b7a4416-304a-4aed-bf0f-4f6111e89892_09",
                 "selfUserCode": "27292686996733952",
                 "deviceId": "49500186-2b6d-60b6-2c40-add6f224ada4",
                 "sign": "daimaqian.sign",
