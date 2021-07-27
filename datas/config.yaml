@@ -1,0 +1,3 @@
+env200:
+  host: http://tx-bj-pt-uat-service01.reworldgame.com
+  port: 8048
