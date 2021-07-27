@@ -22,5 +22,6 @@ class TestLogin:
         print(json.dumps(r.json(), indent=2, ensure_ascii=False))
         assert r.status_code == 200
 
-    def test_chat(self):
+    # tijiao
+    def test_chat1(self):
         pass
