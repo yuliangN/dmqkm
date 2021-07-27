@@ -1,3 +1,5 @@
+import json
+
 import requests
 
 from api.login_api import Login
@@ -10,6 +12,7 @@ class TestLogin:
         self.login.get_token()
         # print(self.login.get_token())
 
+    # 调试
     def test_change_signature(self):
         r = requests.post("http://game.dreamreworld.com/api/acc/v1/profile/set",
                           data={"token": self.login.get_token(),
