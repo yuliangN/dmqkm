@@ -1,6 +1,8 @@
 from api.setting_api import Settings
 import allure
 
+
+@allure.feature("修改签名页面")
 class TestSignnature:
     # 初始化设置页
     def setup_class(self):
@@ -13,18 +15,18 @@ class TestSignnature:
         assert  r.get('message') == '操作成功'
 
     @allure.feature("修改成功签名-文字")
-    def test_change_letter(self):
-        r = self.settings.changeSignatureletter()
+    def test_change_letter(self, user):
+        r = self.settings.changeSignatureletter(user)
         assert  r.get('code') == 1
         assert  r.get('message') == '操作成功'
 
     @allure.feature("修改成功签名-特殊符号")
-    def test_change_symbol(self):
-        r = self.settings.changeSignatureSymbol()
+    def test_change_symbol(self, user):
+        r = self.settings.changeSignatureSymbol(user)
         assert r.get('code') == 1
         assert r.get('message') == '操作成功'
 
     @allure.feature("修改签名失败-敏感字")
-    def test_symbol(self):
-        r = self.settings.changeSignaFail()
+    def test_symbol(self, user):
+        r = self.settings.changeSignaFail(user)
         assert r.get('code') == 11057

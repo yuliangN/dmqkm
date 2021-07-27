@@ -12,43 +12,39 @@ class Settings():
                 "sign": "daimaqian.sign",
                 "introduction": "6666"}
         res_json = ApiTemplate().post_api(path,data)
-        print(res_json)
         return res_json
 
     # 成功 - 修改用户签名文字
-    def changeSignatureletter(self):
+    def changeSignatureletter(self, data):
         path = '/acc/v1/profile/set'
-        data = {"token": "5b7a4416-304a-4aed-bf0f-4f6111e89892_09",
-                "selfUserCode": "27292686996733952",
+        data = {"token": data,
+                "selfUserCode": "27302859291230208",
                 "deviceId": "49500186-2b6d-60b6-2c40-add6f224ada4",
                 "sign": "daimaqian.sign",
                 "introduction": "来吧"}
         res_json = ApiTemplate().post_api(path,data)
-        print(res_json)
         return res_json
 
     # 成功 - 修改用户签名特殊符号
-    def changeSignatureSymbol(self):
+    def changeSignatureSymbol(self, data):
         path = '/acc/v1/profile/set'
-        data = {"token": "5b7a4416-304a-4aed-bf0f-4f6111e89892_09",
-                "selfUserCode": "27292686996733952",
+        data = {"token": data,
+                "selfUserCode": "27302859291230208",
                 "deviceId": "49500186-2b6d-60b6-2c40-add6f224ada4",
                 "sign": "daimaqian.sign",
                 "introduction": "@#￥%……A&"}
         res_json = ApiTemplate().post_api(path,data)
-        print(res_json)
         return res_json
 
     # 失败-签名敏感字校验
-    def changeSignaFail(self):
+    def changeSignaFail(self, data):
         path = '/acc/v1/profile/set'
-        data = {"token": "5b7a4416-304a-4aed-bf0f-4f6111e89892_09",
-                "selfUserCode": "27292686996733952",
+        data = {"token": data,
+                "selfUserCode": "27302859291230208",
                 "deviceId": "49500186-2b6d-60b6-2c40-add6f224ada4",
                 "sign": "daimaqian.sign",
                 "introduction": "操"}
         res_json = ApiTemplate().post_api(path,data)
-        print(res_json)
         return res_json
 
 
