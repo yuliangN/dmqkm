@@ -1,27 +1,16 @@
-import json
+import pytest
 
-import requests
+from api.login_api import Login
+from datas.read_yaml import Yamls
 
-# from api.login_api import Login
-#
-#
-# class TestLogin:
-#
-#     def setup_class(self):
-#         self.login = Login()
-#         self.login.get_token()
-        # print(self.login.get_token())
 
-# def test_change_signature(self):
-#     r = requests.post("http://game.dreamreworld.com/api/acc/v1/profile/set",
-#                       data={"token": self.login.get_token(),
-#                             "selfUserCode":"27292686996733952",
-#                             "deviceId":"49500186-2b6d-60b6-2c40-add6f224ada4",
-#                             "sign":"daimaqian.sign",
-#                             "introduction": "qwe1231111333"})
-#     print(json.dumps(r.json(), indent=2, ensure_ascii=False))
-#     assert r.status_code == 200
-#
-# # tijiao
-# def test_chat1(self):
-#     pass
+class TestLogin:
+    def setup_class(self):
+        self.login = Login()
+
+    # 手机号登录成功，参数化+数据驱动 获取手机号及密码
+    @pytest.mark.parametrize('param1,param2', Yamls().read_user())
+    def test_login_fail2(self, param1, param2):
+        print(param1, param2)
+        r = self.login.login(param1, param2)
+        assert r.get('code') == 1

@@ -1,13 +1,14 @@
 import json
 import requests
 
-from datas.read_yaml import read_yml
+from datas.read_yaml import Yamls
 
 
 class ApiTemplate:
     # 封装域名+端口
+    Yamls
     def common(self,path):
-        host = read_yml()['env200']['host'] + ':'+str(read_yml()['env200']['port'])
+        host = Yamls().read_yml()['env200']['host'] + ':' + str(Yamls().read_yml()['env200']['port'])
         url = host + str(path)
         return url
 
