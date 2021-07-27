@@ -4,13 +4,13 @@ from lib.api_template import ApiTemplate
 # 设置页
 class Settings():
     # 成功-修改用户签名数字
-    def changeSignature(self):
+    def changeSignature(self, data):
         path = '/acc/v1/profile/set'
-        data = {"token": "5b7a4416-304a-4aed-bf0f-4f6111e89892_09",
-                "selfUserCode": "27292686996733952",
+        data = {"token": data,
+                "selfUserCode": "27302859291230208",
                 "deviceId": "49500186-2b6d-60b6-2c40-add6f224ada4",
                 "sign": "daimaqian.sign",
-                "introduction": "33333"}
+                "introduction": "6666"}
         res_json = ApiTemplate().post_api(path,data)
         print(res_json)
         return res_json

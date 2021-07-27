@@ -1,18 +1,22 @@
 from api.base_api import BaseApi
 import requests
-import json
 
-class Login(BaseApi):
+from lib.api_template import ApiTemplate
 
+
+class Login:
+    # 获取token
     def get_token(self):
-        r = requests.post("http://tx-bj-pt-uat-service01.reworldgame.com:8048/acc/v1/login/password",
-                          data={
-                              "accountName": "13911112028",
+        path = '/acc/v1/login/password'
+        data = {"accountName": "13911111015",
                               "password": "qwe123",
                               "sign": "daimaqiankun.sign",
                               "deviceId": "15615615616",
                               "osType": "09",
-                              "adId": 8001
-                          })
-        # print(json.dumps(r.json(), indent=2, ensure_ascii=False))
-        return  r.json()['token']
+                "adId": 8001}
+        res_json = ApiTemplate().post_api(path, data)
+        # print(res_json)
+        return res_json.get('token')
+
+# if __name__ == '__main__':
+#     print(Login().get_token())

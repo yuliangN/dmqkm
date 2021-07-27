@@ -6,8 +6,8 @@ class TestSignnature:
         self.settings = Settings()
 
     # 修改成功签名-数字
-    def test_change_signature(self):
-        r = self.settings.changeSignature()
+    def test_change_signature(self, user):
+        r = self.settings.changeSignature(user)
         assert  r.get('code') == 1
         assert  r.get('message') == '操作成功'
 
