@@ -26,7 +26,6 @@ class Yamls:
 
 if __name__ == '__main__':
 #     # print(read_yml()['env200']['host'])
-#     # print(read_yml()['env200']['port'])
 
 print(Yamls().read_user())
 # print(Yamls().read_user())
