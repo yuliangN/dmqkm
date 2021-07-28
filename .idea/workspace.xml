@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db6cc692-6c8e-49f1-b506-29a4fdddbe26" name="Default Changelist" comment="">
+    <list default="true" id="db6cc692-6c8e-49f1-b506-29a4fdddbe26" name="Default Changelist" comment="新增用例1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/settings/test_signature.py" beforeDir="false" afterPath="$PROJECT_DIR$/cases/settings/test_signature.py" afterDir="false" />
+    </list>
+    <list id="77096a8c-302b-4d78-ae08-c5d346ba4964" name="Revert &quot;调整方法&quot;" comment="Revert &quot;调整方法&quot;&#10;&#10;This reverts commit ff690e4b">
+      <change beforePath="$PROJECT_DIR$/datas/read_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/datas/read_yaml.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,36 +16,51 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_settings_TestSettings_test_symbol.coverage" NAME="pytest for test_settings.TestSettings.test_symbol Coverage Results" MODIFIED="1627270537112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
-    <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_signature_TestSignnature_test_change_signature.coverage" NAME="pytest for test_signature.TestSignnature.test_change_signature Coverage Results" MODIFIED="1627299111093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases/settings" />
-    <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_signature_TestSignnature_test_change_letter.coverage" NAME="pytest for test_signature.TestSignnature.test_change_letter Coverage Results" MODIFIED="1627351276953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases/settings" />
+    <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_signature_TestSignnature_test_change_letter.coverage" NAME="pytest for test_signature.TestSignnature.test_change_letter Coverage Results" MODIFIED="1627372598385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases/settings" />
+    <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_signature_TestSignnature_test_change_signature.coverage" NAME="pytest for test_signature.TestSignnature.test_change_signature Coverage Results" MODIFIED="1627381039755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases/settings" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_login_TestLogin_test_xiugai.coverage" NAME="pytest for test_login.TestLogin.test_xiugai Coverage Results" MODIFIED="1626782182387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_settings_TestSettings_test_change_symbol.coverage" NAME="pytest for test_settings.TestSettings.test_change_symbol Coverage Results" MODIFIED="1627271178121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/dmqkhg$setting_api.coverage" NAME="setting_api Coverage Results" MODIFIED="1626977080683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_settings_TestSettings_test_change_signature.coverage" NAME="pytest for test_settings.TestSettings.test_change_signature Coverage Results" MODIFIED="1627284151572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_signature_TestSignnature_test_01.coverage" NAME="pytest for test_signature.TestSignnature.test_01 Coverage Results" MODIFIED="1627299084428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases/settings" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_settings_TestSettings_test_signature_null.coverage" NAME="pytest for test_settings.TestSettings.test_signature_null Coverage Results" MODIFIED="1627269677139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
-    <SUITE FILE_PATH="coverage/dmqkhg$login_api.coverage" NAME="login_api Coverage Results" MODIFIED="1626769918769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
-    <SUITE FILE_PATH="coverage/dmqkhg$read_yaml.coverage" NAME="read_yaml Coverage Results" MODIFIED="1627287743805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datas" />
+    <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_login_TestLogin_test_login_fail2.coverage" NAME="pytest for test_login.TestLogin.test_login_fail2 Coverage Results" MODIFIED="1627384733014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases/login" />
+    <SUITE FILE_PATH="coverage/dmqkhg$login_api.coverage" NAME="login_api Coverage Results" MODIFIED="1627377357129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
+    <SUITE FILE_PATH="coverage/dmqkhg$read_yaml.coverage" NAME="read_yaml Coverage Results" MODIFIED="1627382789790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datas" />
+    <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_signature_TestSignnature.coverage" NAME="pytest for test_signature.TestSignnature Coverage Results" MODIFIED="1627384428665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases/settings" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_signature_TestSignnature_test_change_symbol.coverage" NAME="pytest for test_signature.TestSignnature.test_change_symbol Coverage Results" MODIFIED="1627281804060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases/settings" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_login_TestLogin_test_login.coverage" NAME="pytest for test_login.TestLogin.test_login Coverage Results" MODIFIED="1626771347162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_settings_TestSettings_test_change_letter.coverage" NAME="pytest for test_settings.TestSettings.test_change_letter Coverage Results" MODIFIED="1627281760077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/dmqkhg$api_template.coverage" NAME="api_template Coverage Results" MODIFIED="1627281597332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1626771110835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
-    <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_login_TestLogin_test_01.coverage" NAME="pytest for test_login.TestLogin.test_01 Coverage Results" MODIFIED="1626768819146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/dmqkhg$request_api.coverage" NAME="request_api Coverage Results" MODIFIED="1626840094541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_login_TestLogin_test_01.coverage" NAME="pytest for test_login.TestLogin.test_01 Coverage Results" MODIFIED="1627381997393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/dmqkhg$demo.coverage" NAME="demo Coverage Results" MODIFIED="1624071104337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_login_TestLogin_test_change_signature.coverage" NAME="pytest for test_login.TestLogin.test_change_signature Coverage Results" MODIFIED="1626839527203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
     <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_login_TestLogin_test_loginfailure.coverage" NAME="pytest for test_login.TestLogin.test_loginfailure Coverage Results" MODIFIED="1623849067945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
+    <SUITE FILE_PATH="coverage/dmqkhg$pytest_for_test_login_TestLogin_test_login_fail.coverage" NAME="pytest for test_login.TestLogin.test_login_fail Coverage Results" MODIFIED="1627381275290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cases" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cases/test_login.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cases/login/test_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="275">
+              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="30" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cases/settings/test_signature.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/setting_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="64" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="64" />
+            <state relative-caret-position="92">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -75,19 +94,22 @@
         <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/datas/data_parm.yaml" />
         <option value="$PROJECT_DIR$/config.ini" />
-        <option value="$PROJECT_DIR$/api/login_api.py" />
         <option value="$PROJECT_DIR$/lib/request_api.py" />
         <option value="$PROJECT_DIR$/api/request_api.py" />
         <option value="$PROJECT_DIR$/api/api_api_template.py" />
         <option value="$PROJECT_DIR$/api/api_template.py" />
         <option value="$PROJECT_DIR$/datas/config.yaml" />
-        <option value="$PROJECT_DIR$/api/setting_api.py" />
         <option value="$PROJECT_DIR$/cases/settings/test_settings.py" />
-        <option value="$PROJECT_DIR$/lib/api_template.py" />
-        <option value="$PROJECT_DIR$/datas/read_yaml.py" />
-        <option value="$PROJECT_DIR$/cases/settings/test_signature.py" />
         <option value="$PROJECT_DIR$/cases/test_settings.py" />
+        <option value="$PROJECT_DIR$/cases/settings/conftest.py" />
+        <option value="$PROJECT_DIR$/lib/api_template.py" />
+        <option value="$PROJECT_DIR$/api/login_api.py" />
+        <option value="$PROJECT_DIR$/datas/read_yaml.py" />
         <option value="$PROJECT_DIR$/cases/test_login.py" />
+        <option value="$PROJECT_DIR$/datas/user.yaml" />
+        <option value="$PROJECT_DIR$/api/setting_api.py" />
+        <option value="$PROJECT_DIR$/cases/login/test_login.py" />
+        <option value="$PROJECT_DIR$/cases/settings/test_signature.py" />
       </list>
     </option>
   </component>
@@ -97,11 +119,11 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
-    <option name="y" value="59" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="29" />
     <option name="width" value="1680" />
-    <option name="height" value="962" />
+    <option name="height" value="948" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -119,12 +141,7 @@
             <path>
               <item name="dmqkhg" type="b2602c69:ProjectViewProjectNode" />
               <item name="dmqkhg" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmqkhg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmqkhg" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -143,11 +160,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonFiles\dmqkhg\cases\login" />
       <recent name="D:\PythonFiles\dmqkhg\cases" />
       <recent name="D:\PythonFiles\dmqkhg\cases\settings" />
       <recent name="D:\PythonFiles\dmqkhg\lib" />
       <recent name="D:\PythonFiles\dmqkhg\api" />
-      <recent name="D:\PythonFiles\dmqkhg" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -162,7 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_signature.TestSignnature.test_change_letter">
+  <component name="RunManager" selected="Python tests.pytest for test_login.TestLogin.test_login_fail2">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="dmqkhg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -207,7 +224,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_settings.TestSettings.test_change_signature" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for cases.login.test_login.TestLogin" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="dmqkhg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -219,11 +236,59 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_settings.TestSettings.test_change_signature&quot;" />
+      <option name="_new_target" value="&quot;cases.login.test_login.TestLogin&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_signature.TestSignnature.test_01" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for cases.login.test_login.TestLogin" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="dmqkhg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;cases.login.test_login.TestLogin&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for cases.login.test_login.TestLogin.test_login_fail2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="dmqkhg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;cases.login.test_login.TestLogin.test_login_fail2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_login.TestLogin.test_login_fail2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="dmqkhg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases/login" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login.TestLogin.test_login_fail2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_signature.TestSignnature" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="dmqkhg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -235,49 +300,17 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_signature.TestSignnature.test_01&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_signature.TestSignnature.test_change_letter" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="dmqkhg" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases/settings" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_signature.TestSignnature.test_change_letter&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_signature.TestSignnature.test_change_signature" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="dmqkhg" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases/settings" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_signature.TestSignnature.test_change_signature&quot;" />
+      <option name="_new_target" value="&quot;test_signature.TestSignnature&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_signature.TestSignnature.test_change_letter" />
-        <item itemvalue="Python tests.pytest for test_signature.TestSignnature.test_change_signature" />
-        <item itemvalue="Python tests.pytest for test_signature.TestSignnature.test_01" />
+        <item itemvalue="Python tests.pytest for test_login.TestLogin.test_login_fail2" />
+        <item itemvalue="Python tests.pytest for test_signature.TestSignnature" />
+        <item itemvalue="Python tests.pytest for cases.login.test_login.TestLogin.test_login_fail2" />
         <item itemvalue="Python.read_yaml" />
-        <item itemvalue="Python tests.pytest for test_settings.TestSettings.test_change_signature" />
+        <item itemvalue="Python tests.pytest for cases.login.test_login.TestLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +330,7 @@
       <workItem from="1627290673345" duration="6071000" />
       <workItem from="1627359739928" duration="2252000" />
       <workItem from="1627365805520" duration="130000" />
-      <workItem from="1627366124163" duration="314000" />
+      <workItem from="1627366124163" duration="13391000" />
     </task>
     <task id="LOCAL-00001" summary="调试">
       <created>1627360988124</created>
@@ -313,43 +346,113 @@
       <option name="project" value="LOCAL" />
       <updated>1627365757311</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增用例1">
+      <created>1627366455868</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627366455868</updated>
+    </task>
+    <task id="LOCAL-00004" summary="新增用例1">
+      <created>1627366927924</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627366927924</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新增用例1">
+      <created>1627375168117</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627375168117</updated>
+    </task>
+    <task id="LOCAL-00006" summary="添加设置页装饰器">
+      <created>1627378119144</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627378119144</updated>
+    </task>
+    <task id="LOCAL-00007" summary="实现数据驱动+参数化">
+      <created>1627383117613</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1627383117613</updated>
+    </task>
+    <task id="LOCAL-00008" summary="调整方法">
+      <created>1627383158568</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1627383158568</updated>
+    </task>
+    <task id="LOCAL-00009" summary="调整方法">
+      <created>1627383190343</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627383190343</updated>
+    </task>
+    <task id="LOCAL-00010" summary="增加allure报告样式">
+      <created>1627383847893</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627383847893</updated>
+    </task>
+    <task id="LOCAL-00011" summary="优化设置页用例">
+      <created>1627384510794</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1627384510794</updated>
+    </task>
+    <task id="LOCAL-00012" summary="优化用例">
+      <created>1627385005944</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1627385005944</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_settings_TestSettings_test_change_signature - 2021.07.26 at 14h 47m 37s.xml">
-      <configuration name="pytest for test_settings.TestSettings.test_change_signature" configurationId="tests" />
+    <history-entry file="pytest_for_test_login_TestLogin_test_login_fail2 - 2021.07.27 at 18h 35m 16s.xml">
+      <configuration name="pytest for test_login.TestLogin.test_login_fail2" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_signature_TestSignnature_test_01 - 2021.07.26 at 14h 49m 01s.xml">
-      <configuration name="pytest for test_signature.TestSignnature.test_01" configurationId="tests" />
+    <history-entry file="pytest_for_test_login_TestLogin_test_login_fail2 - 2021.07.27 at 18h 38m 11s.xml">
+      <configuration name="pytest for test_login.TestLogin.test_login_fail2" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_signature_TestSignnature_test_01 - 2021.07.26 at 15h 22m 24s.xml">
-      <configuration name="pytest for test_signature.TestSignnature.test_01" configurationId="tests" />
+    <history-entry file="pytest_for_test_login_TestLogin_test_login_fail2 - 2021.07.27 at 18h 48m 14s.xml">
+      <configuration name="pytest for test_login.TestLogin.test_login_fail2" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_settings_TestSettings_test_change_signature - 2021.07.26 at 15h 22m 32s.xml">
-      <configuration name="pytest for test_settings.TestSettings.test_change_signature" configurationId="tests" />
+    <history-entry file="pytest_for_test_login_TestLogin_test_login_fail2 - 2021.07.27 at 18h 50m 01s.xml">
+      <configuration name="pytest for test_login.TestLogin.test_login_fail2" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_signature_TestSignnature_test_01 - 2021.07.26 at 15h 24m 02s.xml">
-      <configuration name="pytest for test_signature.TestSignnature.test_01" configurationId="tests" />
+    <history-entry file="pytest_for_test_login_TestLogin_test_login_fail2 - 2021.07.27 at 18h 50m 08s.xml">
+      <configuration name="pytest for test_login.TestLogin.test_login_fail2" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_signature_TestSignnature_test_01 - 2021.07.26 at 16h 24m 33s.xml">
-      <configuration name="pytest for test_signature.TestSignnature.test_01" configurationId="tests" />
+    <history-entry file="pytest_for_test_login_TestLogin_test_login_fail2 - 2021.07.27 at 18h 50m 30s.xml">
+      <configuration name="pytest for test_login.TestLogin.test_login_fail2" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_signature_TestSignnature_test_01 - 2021.07.26 at 19h 31m 27s.xml">
-      <configuration name="pytest for test_signature.TestSignnature.test_01" configurationId="tests" />
+    <history-entry file="pytest_for_test_login_TestLogin_test_login_fail2 - 2021.07.27 at 19h 08m 13s.xml">
+      <configuration name="pytest for test_login.TestLogin.test_login_fail2" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_signature_TestSignnature_test_change_signature - 2021.07.26 at 19h 31m 52s.xml">
-      <configuration name="pytest for test_signature.TestSignnature.test_change_signature" configurationId="tests" />
+    <history-entry file="pytest_for_test_signature_TestSignnature - 2021.07.27 at 19h 13m 23s.xml">
+      <configuration name="pytest for test_signature.TestSignnature" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_signature_TestSignnature_test_change_letter - 2021.07.26 at 19h 31m 54s.xml">
-      <configuration name="pytest for test_signature.TestSignnature.test_change_letter" configurationId="tests" />
+    <history-entry file="pytest_for_test_signature_TestSignnature - 2021.07.27 at 19h 13m 50s.xml">
+      <configuration name="pytest for test_signature.TestSignnature" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_signature_TestSignnature_test_change_letter - 2021.07.27 at 10h 01m 18s.xml">
-      <configuration name="pytest for test_signature.TestSignnature.test_change_letter" configurationId="tests" />
+    <history-entry file="pytest_for_test_login_TestLogin_test_login_fail2 - 2021.07.27 at 19h 18m 54s.xml">
+      <configuration name="pytest for test_login.TestLogin.test_login_fail2" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71437000" />
+    <option name="totallyTimeSpent" value="84514000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,24 +464,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="59" width="1680" height="962" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15617284" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13486141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827103" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33012047" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4135514" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29577464" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4127844" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297619" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3293124" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2291918" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3293124" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -386,22 +490,22 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14876543" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13486141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827103" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32009345" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4135514" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29577464" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4127844" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297619" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2291918" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3293124" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -412,10 +516,43 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="2" />
+                  <option value="1" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="调试" />
     <MESSAGE value="新增用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增用例" />
+    <MESSAGE value="添加设置页装饰器" />
+    <MESSAGE value="实现数据驱动+参数化" />
+    <MESSAGE value="新增用例1" />
+    <MESSAGE value="调整方法" />
+    <MESSAGE value="增加allure报告样式" />
+    <MESSAGE value="优化设置页用例" />
+    <MESSAGE value="优化用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化用例" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -480,13 +617,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/request_api.py" />
     <entry file="file://$PROJECT_DIR$/api/api_api_template.py" />
-    <entry file="file://$PROJECT_DIR$/lib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://D:/Program Files (x86)/python/Lib/typing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="2283" column="29" lean-forward="true" selection-start-line="2283" selection-start-column="29" selection-end-line="2283" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/test_settings.py" />
+    <entry file="file://$PROJECT_DIR$/lib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/read_yaml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/user.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/login_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -500,65 +669,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/login_api.py">
+    <entry file="file://$PROJECT_DIR$/cases/settings/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="161">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datas/config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/api_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/test_settings.py" />
-    <entry file="file://$PROJECT_DIR$/cases/settings/test_signature.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datas/read_yaml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/test_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/setting_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="64" />
+        <state relative-caret-position="92">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/login/test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/api_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/settings/test_signature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
