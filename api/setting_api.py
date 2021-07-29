@@ -1,7 +1,8 @@
 
 from lib.api_template import ApiTemplate
 
-# 设置页
+
+# 设置模块
 class Settings():
     # 成功-修改用户签名数字
     def changeSignature(self, data):
