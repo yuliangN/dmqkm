@@ -33,12 +33,11 @@ class Yamls:
             data = yaml.safe_load(f.read())
         return data
 
-
-if __name__ == '__main__':
+# if __name__ == '__main__':
 #     # print(read_yml()['env200']['host'])
 
-print(Yamls().read_user()['data'])
-print(Yamls().read_user()['data4'][0])
+# print(Yamls().read_user()['data'])
+# print(Yamls().read_user()['data4'][0])
 #     url = read_yml()['env200']['host'] + ':'+json.dumps(read_yml()['env200']['port'])
 #     print(url)
 #     print(type(url))
