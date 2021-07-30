@@ -3,6 +3,9 @@ import logging
 
 
 # 返回数据库连接
+from datas.read_yaml import Yamls
+
+
 def get_db_conn():
     db_host = 'tx-bj-pt-uat-service01.reworldgame.com'
     db_port = 5809
@@ -61,5 +64,6 @@ class DB:
 
 # if __name__ == '__main__':
 # print(check_mapid('1055'))
-# print(DB.check_mobile(17611523112))
-# print(DB.del_mobile(13911111045))
+# print(DB.check_mobile(17611523112))\
+#     print(Yamls().read_user()['data6'])
+# print(DB.del_mobile(Yamls().read_user()['data5']))
