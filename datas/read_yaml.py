@@ -35,8 +35,8 @@ class Yamls:
 
 # if __name__ == '__main__':
 #     print(Yamls().read_user()['data5'])
-# print(Yamls().read_user()['data'])
-# print(Yamls().read_user()['data4'][0])
-#     url = read_yml()['env200']['host'] + ':'+json.dumps(read_yml()['env200']['port'])
-#     print(url)
-#     print(type(url))
+#     print(Yamls().read_user()['data'])
+#     print(Yamls().read_user()['data4'][0])
+# url = read_yml()['env200']['host'] + ':'+json.dumps(read_yml()['env200']['port'])
+# print(url)
+# print(type(url))

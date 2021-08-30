@@ -11,7 +11,6 @@ class Login:
                 "osType": "09",
                 "adId": 8001}
         res_json = ApiTemplate().post_api(path, data)
-        # print(res_json)
         return res_json.get('token')
 
     # 手机号登录
@@ -48,7 +47,6 @@ class Login:
                 "osType": "09",
                 "adId": 8001}
         res_json = ApiTemplate().post_api(path, data)
-        print(res_json)
         return res_json
 
 # if __name__ == '__main__':
