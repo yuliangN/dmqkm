@@ -1,3 +1,5 @@
+import pytest
+
 from api.setting_api import Settings
 import allure
 
@@ -26,7 +28,8 @@ class TestSignnature:
         assert r.get('code') == 1
         assert r.get('message') == '操作成功'
 
+    @pytest.mark.parametrize('datas', ['操', '日'])
     @allure.story("修改签名失败-敏感字")
-    def test_symbol(self, user):
-        r = self.settings.changeSignaFail(user)
-        assert r.get('code') == 11057
+    def test_symbol(self, user, datas):
+        r = self.settings.changeSignaFail(user, datas)
+        assert r.get('code') == 11058

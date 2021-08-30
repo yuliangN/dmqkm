@@ -1,3 +1,13 @@
 env200:
   host: http://tx-bj-pt-uat-service01.reworldgame.com
   port: 8048
+#公共参数
+public:
+  deviceId: 49500186-2b6d-60b6-2c40-add6f224ada4
+  lang: zh_CN
+  adId: 8001
+  deviceName: iphone8
+  osType: 09
+  selfUserCode: 27302859291230208
+  sign: daimaqian.sign
+  appVer: 10
