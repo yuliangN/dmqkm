@@ -1,6 +1,5 @@
 from lib.api_template import ApiTemplate
 
-
 # 手机号登录模块
 class Login:
     # 获取token

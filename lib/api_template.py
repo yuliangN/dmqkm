@@ -6,7 +6,6 @@ from datas.read_yaml import Yamls
 
 class ApiTemplate:
     # 封装域名+端口
-    Yamls
     def common(self,path):
         host = Yamls().read_yml()['env200']['host'] + ':' + str(Yamls().read_yml()['env200']['port'])
         url = host + str(path)
@@ -14,14 +13,14 @@ class ApiTemplate:
 
     # post请求
     def post_api(self,path,data):
-        url = ApiTemplate().common(path)
+        url = self.common(path)
         res = requests.post(url=url,data=data)
         res_json = res.json()
         return res_json
 
     # get请求
     def get_api(self, path,data):
-        url = ApiTemplate().common(path)
+        url = requests.common(path)
         res = requests.get(url=url, data=data)
         res_json = res.json()
         return res_json

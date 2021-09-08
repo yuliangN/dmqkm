@@ -100,6 +100,29 @@ class Settings:
         res_json = ApiTemplate().post_api(path,data)
         return res_json
 
+    # 成功-修改性别
+    def change_gender(self, data, parme):
+        path = '/acc/v1/profile/set'
+        data = {"token": data,
+                "selfUserCode": self.datas.read_yml()['public']['selfUserCode'],
+                "deviceId": self.datas.read_yml()['public']['deviceId'],
+                "sign": self.datas.read_yml()['public']['sign'],
+                "gender": parme}
+        res_json = ApiTemplate().post_api(path, data)
+        print(res_json)
+        return res_json
+
+    # 成功-性别为空
+    def change_genderfail(self, data):
+        path = '/acc/v1/profile/set'
+        data = {"token": data,
+                "selfUserCode": self.datas.read_yml()['public']['selfUserCode'],
+                "deviceId": self.datas.read_yml()['public']['deviceId'],
+                "sign": self.datas.read_yml()['public']['sign'],
+                "gender": "nn"}
+        res_json = ApiTemplate().post_api(path, data)
+        print(res_json)
+        return res_json
 
 
 if __name__ == '__main__':
