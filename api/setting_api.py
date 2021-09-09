@@ -25,7 +25,7 @@ class Settings:
                 "selfUserCode": self.datas.read_yml()['public']['selfUserCode'],
                 "deviceId": self.datas.read_yml()['public']['deviceId'],
                 "sign": self.datas.read_yml()['public']['sign'],
-                "nick": "大宝贝1"}
+                "nick": "机会"}
         res_json = ApiTemplate().post_api(path, data)
         print(res_json)
         return res_json
