@@ -1,3 +1,4 @@
+
 from lib.api_template import ApiTemplate
 from datas.read_yaml import Yamls
 
@@ -15,7 +16,6 @@ class Settings:
                 "sign": self.datas.read_yml()['public']['sign'],
                 "nick": "大宝贝"}
         res_json = ApiTemplate().post_api(path, data)
-        print(res_json)
         return res_json
 
     # 失败-昵称已存在
