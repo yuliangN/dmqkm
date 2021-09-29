@@ -56,3 +56,10 @@ class TestAutonym:
         r = self.settings.autonym(user, name, idcard)
         assert r.get('code') == 25005
         assert r.get('message') == '缺少参数idcard'
+
+    @allure.story("失败-手机号为空")
+    @pytest.mark.parametrize('name,idcard', autonym['users6'])
+    def test_mobile_char(self, user, name, idcard):
+        r = self.settings.autonym(user, name, idcard)
+        assert r.get('code') == 11041
+        assert r.get('message') == '认证失败，该真实姓名和身份证不匹配'
