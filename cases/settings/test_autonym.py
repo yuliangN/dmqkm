@@ -50,14 +50,14 @@ class TestAutonym:
         assert r.get('code') == 25005
         assert r.get('message') == '缺少参数name'
 
-    @allure.story("失败-手机号为空")
+    @allure.story("失败-身份证号为空")
     @pytest.mark.parametrize('name,idcard', autonym['users5'])
     def test_mobile_null(self, user, name, idcard):
         r = self.settings.autonym(user, name, idcard)
         assert r.get('code') == 25005
         assert r.get('message') == '缺少参数idcard'
 
-    @allure.story("失败-手机号为特殊字符")
+    @allure.story("失败-姓名为特殊字符")
     @pytest.mark.parametrize('name,idcard', autonym['users6'])
     def test_mobile_char(self, user, name, idcard):
         r = self.settings.autonym(user, name, idcard)
