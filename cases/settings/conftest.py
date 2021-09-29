@@ -8,3 +8,4 @@ from api.login_api import Login
 def user():
     token = Login().get_token()
     return token
+

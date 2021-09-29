@@ -124,6 +124,21 @@ class Settings:
         print(res_json)
         return res_json
 
+    # 实名
+    def autonym(self, data, name, idcard):
+        path = '/acc/v1/profile/identity'
+        data = {"token": data,
+                "selfUserCode": self.datas.read_yml()['public']['selfUserCode'],
+                "deviceId": self.datas.read_yml()['public']['deviceId'],
+                "sign": self.datas.read_yml()['public']['sign'],
+                "name": name,
+                "idcard": idcard}
+        res_json = ApiTemplate().post_api(path, data)
+        print(res_json)
+        return res_json
+
+
+
 
 if __name__ == '__main__':
     a =Settings()

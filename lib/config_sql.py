@@ -62,6 +62,11 @@ class DB:
         sql = "DELETE from dmqk_account.t_account where mobile='%s'" % mobile
         return DB.change_db(sql)
 
+    # 实名初始化
+    def init_autonym(usercode):
+        sql = "update dmqk_account.t_profile set name=null , idcard=null ,id_card_verify=0 where userCode = '%s'" % usercode
+        return DB.change_db(sql)
+
 # if __name__ == '__main__':
 # print(check_mapid('1055'))
 # print(DB.check_mobile(17611523112))\
