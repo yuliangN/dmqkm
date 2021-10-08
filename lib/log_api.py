@@ -50,3 +50,8 @@ class logs(object):
 
     def error(self, message):
         self.logger.error(message)
+
+
+log = logs()
+# if __name__ == '__main__':
+#     logs().info("123")

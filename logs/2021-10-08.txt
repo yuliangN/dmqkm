@@ -1,0 +1,219 @@
+[2021-10-08 15:24:48] [INFO] 123
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.address`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.address` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.automotive`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.automotive` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.bank`.
+[2021-10-08 15:37:13] [DEBUG] Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.barcode`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.barcode` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.color`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.color` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.company`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.company` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.credit_card`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.credit_card` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.currency`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.currency` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.date_time`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.date_time` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.geo`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.geo` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.internet`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.internet` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.job`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.job` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.lorem`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.lorem` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.misc`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.misc` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.person`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.person` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.phone_number`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.phone_number` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:37:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.ssn`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.ssn` has been localized to `en_US`.
+[2021-10-08 15:37:13] [DEBUG] Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:37:13] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:37:13] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/login/password HTTP/1.1" 200 104
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.address`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.address` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.automotive`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.automotive` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.bank`.
+[2021-10-08 15:38:32] [DEBUG] Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.barcode`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.barcode` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.color`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.color` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.company`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.company` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.credit_card`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.credit_card` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.currency`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.currency` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.date_time`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.date_time` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.geo`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.geo` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.internet`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.internet` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.job`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.job` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.lorem`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.lorem` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.misc`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.misc` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.person`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.person` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.phone_number`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.phone_number` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:38:32] [DEBUG] Looking for locale `en_US` in provider `faker.providers.ssn`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.ssn` has been localized to `en_US`.
+[2021-10-08 15:38:32] [DEBUG] Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:38:32] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:38:32] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/login/password HTTP/1.1" 200 787
+[2021-10-08 15:38:32] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:38:32] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/login/password HTTP/1.1" 200 762
+[2021-10-08 15:38:32] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:38:32] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/login/password HTTP/1.1" 200 768
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.address`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.address` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.automotive`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.automotive` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.bank`.
+[2021-10-08 15:39:13] [DEBUG] Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.barcode`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.barcode` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.color`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.color` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.company`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.company` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.credit_card`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.credit_card` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.currency`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.currency` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.date_time`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.date_time` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.geo`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.geo` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.internet`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.internet` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.job`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.job` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.lorem`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.lorem` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.misc`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.misc` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.person`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.person` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.phone_number`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.phone_number` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:39:13] [DEBUG] Looking for locale `en_US` in provider `faker.providers.ssn`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.ssn` has been localized to `en_US`.
+[2021-10-08 15:39:13] [DEBUG] Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:39:13] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:39:13] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/login/password HTTP/1.1" 200 787
+[2021-10-08 15:39:13] [INFO] 获取用户token:01cf22c2-ec0f-4d31-b743-051d14fa54bd_09
+[2021-10-08 15:39:13] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:39:13] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/profile/identity HTTP/1.1" 200 78
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.address`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.address` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.automotive`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.automotive` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.bank`.
+[2021-10-08 15:56:05] [DEBUG] Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.barcode`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.barcode` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.color`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.color` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.company`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.company` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.credit_card`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.credit_card` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.currency`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.currency` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.date_time`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.date_time` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.geo`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.geo` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.internet`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.internet` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.job`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.job` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.lorem`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.lorem` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.misc`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.misc` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.person`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.person` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.phone_number`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.phone_number` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:56:05] [DEBUG] Looking for locale `en_US` in provider `faker.providers.ssn`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.ssn` has been localized to `en_US`.
+[2021-10-08 15:56:05] [DEBUG] Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:56:05] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:56:05] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/login/password HTTP/1.1" 200 787
+[2021-10-08 15:56:05] [INFO] 获取用户token:4c87f6db-cc70-4a59-8736-b9f3868e4f9f_09
+[2021-10-08 15:56:05] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:56:05] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/profile/identity HTTP/1.1" 200 78
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.address`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.address` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.automotive`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.automotive` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.bank`.
+[2021-10-08 15:57:11] [DEBUG] Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.barcode`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.barcode` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.color`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.color` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.company`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.company` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.credit_card`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.credit_card` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.currency`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.currency` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.date_time`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.date_time` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.geo`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.geo` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.internet`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.internet` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.job`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.job` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.lorem`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.lorem` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.misc`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.misc` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.person`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.person` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.phone_number`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.phone_number` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:57:11] [DEBUG] Looking for locale `en_US` in provider `faker.providers.ssn`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.ssn` has been localized to `en_US`.
+[2021-10-08 15:57:11] [DEBUG] Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[2021-10-08 15:57:12] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:57:12] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/login/password HTTP/1.1" 200 787
+[2021-10-08 15:57:12] [INFO] 获取用户token: b23cb558-f42c-4c93-aeda-d39583dddb4c_09
+[2021-10-08 15:57:12] [DEBUG] Starting new HTTP connection (1): tx-bj-pt-uat-service01.reworldgame.com:8048
+[2021-10-08 15:57:12] [DEBUG] http://tx-bj-pt-uat-service01.reworldgame.com:8048 "POST /acc/v1/profile/identity HTTP/1.1" 200 78
