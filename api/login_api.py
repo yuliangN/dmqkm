@@ -1,5 +1,5 @@
 from lib.api_template import ApiTemplate
-
+from lib.log_api import log
 # 手机号登录模块
 class Login:
     # 获取token
@@ -10,6 +10,7 @@ class Login:
                 "osType": "09",
                 "adId": 8001}
         res_json = ApiTemplate().post_api(path, data)
+        log.info(f"获取用户token: {res_json.get('token')}")
         return res_json.get('token')
 
     # 手机号登录
