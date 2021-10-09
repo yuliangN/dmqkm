@@ -25,7 +25,7 @@ class RegisterApi:
 
     # 短信验证
     def text_message(self, mobile):
-        path = '/acc/v1/checkcode '
+        path = '/acc/v1/checkcode'
         data = {"mobile": mobile, "sign": "daimaqiankun.sign", "deviceId": "15615615616",
                 "code": "6666", "flag": "reg"}
         res_json = ApiTemplate().post_api(path, data)

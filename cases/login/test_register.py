@@ -11,7 +11,7 @@ class TestRegister:
 
     def setup_class(self):
         self.register = RegisterApi()
-        DB.del_mobile(Yamls().read_user()['data5'])
+        # DB.del_mobile(Yamls().read_user()['data5'])
 
     @allure.story("手机号注册成功")
     @pytest.mark.parametrize('mobile', Yamls().read_user()['data7'])
@@ -40,12 +40,12 @@ class TestRegister:
         assert r.get('code') == 11019
         assert r.get('message') == '该手机号已注册，请直接登录或更换手机号！'
 
-    @allure.story("验证码校验失败-验证码已过期")
-    @pytest.mark.parametrize('mobile', Yamls().read_user()['data7'])
-    def test_code_expire(self, mobile):
-        r = self.register.text_message(mobile)
-        assert r.get('code') == 11035
-        assert r.get('message') == '验证码已过期'
+    # @allure.story("验证码校验失败-验证码已过期")
+    # @pytest.mark.parametrize('mobile', Yamls().read_user()['data7'])
+    # def test_code_expire(self, mobile):
+    #     r = self.register.text_message(mobile)
+    #     assert r.get('code') == 11035
+    #     assert r.get('message') == '验证码已过期'
 
     @allure.story("验证码校验失败-手机号未发送验证码")
     @pytest.mark.parametrize('mobile', Yamls().read_user()['data9'])
