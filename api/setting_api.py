@@ -1,6 +1,7 @@
 
 from lib.api_template import ApiTemplate
 from datas.read_yaml import Yamls
+from lib.log_api import log
 
 # 设置模块
 class Settings:
@@ -146,7 +147,7 @@ class Settings:
                 "sign": self.datas.read_yml()['public']['sign']
                 }
         res_json = ApiTemplate().post_api(path, data)
-        print(res_json)
+        log.info(f"接口返回参数 : {res_json}")
         return res_json
 
     # 绑定邮箱

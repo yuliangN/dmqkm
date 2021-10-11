@@ -78,23 +78,31 @@ users6:
     - 522423199311248945
 
 # 合规的邮箱
-eamail1:
+email1:
   - - 332233@qq.com
   - - nnddnn@163.com
   - - nihao@126.com
   - - aaa.666@gmail.com
 
 # 邮箱已绑定
-email2: 999@163.com
+email2:
+  - - 999@163.com
 
-# 格式不正确
+# 邮箱格式不正确
 email3:
   - - 12313@.com
   - - djjff163.com
-  - -
   - - 你好
-  - - 你好@163.com
   - - 123@@.com
+
+# 邮箱为空
+email4:
+  - -
+
+    # 邮箱存在中文
+email5:
+  - - 你好@163.com
+
 
 
 
