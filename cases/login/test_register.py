@@ -11,7 +11,7 @@ class TestRegister:
 
     def setup_class(self):
         self.register = RegisterApi()
-        # DB.del_mobile(Yamls().read_user()['data5'])
+        DB.del_mobile(Yamls().read_user()['data5'])
 
     @allure.story("手机号注册成功")
     @pytest.mark.parametrize('mobile', Yamls().read_user()['data7'])

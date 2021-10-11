@@ -15,7 +15,7 @@ class logs(object):
                   'ERROR': logging.ERROR,
                   'CRITICAL': logging.CRITICAL}
         # 创建文件目录
-        logs_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + '\logs'
+        logs_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + '/logs'
         if os.path.exists(logs_dir) and os.path.isdir(logs_dir):
             pass
         else:
