@@ -137,8 +137,28 @@ class Settings:
         print(res_json)
         return res_json
 
+    # 发送邮箱
+    def send_bind_email(self, user, data):
+        path = '/acc/v1/send-sms/bind/email'
+        data = {"token": user,
+                "email": data,
+                "deviceId": self.datas.read_yml()['public']['deviceId'],
+                "sign": self.datas.read_yml()['public']['sign']
+                }
+        res_json = ApiTemplate().post_api(path, data)
+        print(res_json)
+        return res_json
 
-
+    # 绑定邮箱
+    def bind_email(self, data, ):
+        path = '/acc/v1/bind/email'
+        data = {"token": data,
+                "selfUserCode": self.datas.read_yml()['public']['selfUserCode'],
+                "deviceId": self.datas.read_yml()['public']['deviceId'],
+                "sign": self.datas.read_yml()['public']['sign']}
+        res_json = ApiTemplate().post_api(path, data)
+        print(res_json)
+        return res_json
 
 if __name__ == '__main__':
     a =Settings()

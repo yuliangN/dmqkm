@@ -33,6 +33,8 @@ class Yamls:
             data = yaml.safe_load(f.read())
         return data
 
+
+users = Yamls()
 # if __name__ == '__main__':
 # #     print(Yamls().read_user()['data5'])
 # #     print(Yamls().read_user()['data'])
