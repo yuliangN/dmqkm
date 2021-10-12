@@ -103,7 +103,13 @@ email4:
 email5:
   - - 你好@163.com
 
+# 绑定正确的邮箱
+email6:
+  - - horcc@163.com
 
+# 邮箱没有发送验证码
+email7:
+  - - horc1@163.com
 
 
 

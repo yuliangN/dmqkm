@@ -2,22 +2,13 @@ import pymysql
 import logging
 
 
-# 返回数据库连接
-from datas.read_yaml import Yamls
-
-
 def get_db_conn():
     db_host = 'tx-bj-pt-uat-service01.reworldgame.com'
     db_port = 5809
     db_user = 'root'
     db_passwd = 'Em77QN4G#yPUpalnGH?'
     db = 'dmqk_account'
-    conn = pymysql.connect(host=db_host,
-                           port=db_port,
-                           user=db_user,
-                           passwd=db_passwd,
-                           db=db
-                           )
+    conn = pymysql.connect(host=db_host, port=db_port, user=db_user, passwd=db_passwd, db=db)
     return conn
 
 
@@ -65,6 +56,11 @@ class DB:
     # 实名初始化
     def init_autonym(usercode):
         sql = "update dmqk_account.t_profile set name=null , idcard=null ,id_card_verify=0 where userCode = '%s'" % usercode
+        return DB.change_db(sql)
+
+    # 重置邮箱
+    def reset_email(usercode):
+        sql = "update dmqk_account.t_account set email=null where userCode = %s" % usercode
         return DB.change_db(sql)
 
 # if __name__ == '__main__':

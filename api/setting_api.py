@@ -151,16 +151,15 @@ class Settings:
         return res_json
 
     # 绑定邮箱
-    def bind_email(self, data, ):
+    def bind_email(self, data, email):
         path = '/acc/v1/bind/email'
         data = {"token": data,
                 "selfUserCode": self.datas.read_yml()['public']['selfUserCode'],
                 "deviceId": self.datas.read_yml()['public']['deviceId'],
-                "sign": self.datas.read_yml()['public']['sign']}
+                "sign": self.datas.read_yml()['public']['sign'],
+                "code": 6666,
+                "email": email
+                }
         res_json = ApiTemplate().post_api(path, data)
-        print(res_json)
+        log.info(f"接口返回参数 : {res_json}")
         return res_json
-
-if __name__ == '__main__':
-    a =Settings()
-    print(a.changeming())
