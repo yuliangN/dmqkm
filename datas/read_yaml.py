@@ -1,3 +1,4 @@
+
 import yaml
 import os
 
@@ -33,13 +34,15 @@ class Yamls:
             data = yaml.safe_load(f.read())
         return data
 
+    # 获取反馈与建议信息
+    def read_feedback(self):
+        base_path = os.path.dirname(os.path.realpath(__file__))
+        # 获取当前配置文件的路径，相当于根路径，读取config.yaml配置文件
+        config_path = os.path.join(base_path, 'couple.yaml')
+        with open(config_path, 'r', encoding='utf-8') as f:
+            data = yaml.safe_load(f.read())
+        return data
+
 
 users = Yamls()
 # if __name__ == '__main__':
-# #     print(Yamls().read_user()['data5'])
-# #     print(Yamls().read_user()['data'])
-# #     print(Yamls().read_user()['data4'][0])
-# # url = read_yml()['env200']['host'] + ':'+json.dumps(read_yml()['env200']['port'])
-# # print(url)
-# # print(type(url))
-# print(Yamls().read_yml()['public']['deviceId'])

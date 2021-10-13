@@ -179,3 +179,39 @@ class Settings:
         res_json = ApiTemplate().post_api(path, data)
         log.info(f"接口返回参数 : {res_json}")
         return res_json
+
+    # 反馈与建议纯文本
+    def feedback_text(self, data, param1, param2, param3):
+        path = '/review/faceback/insert'
+        data = {"token": data,
+                "selfUserCode": users.read_yml()['public']['selfUserCode'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "sign": users.read_yml()['public']['sign'],
+                "lang": users.read_yml()['public']['lang'],
+                "type": param1,
+                "contactWay": param3,
+                "content": param2
+                }
+        res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回参数 : {res_json}")
+        return res_json
+
+    # 反馈与建议上传图片
+    def feedback_image(self, data, param1, param2, param3):
+        import os
+        path = '/review/faceback/insert'
+        base_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+        data_path = os.path.join(base_path, 'datas\image', '1.jpg')
+        files = {'imageFile1': ('1.jpg', open(data_path, 'rb'), "image/jpeg"), }
+        data = {"token": data,
+                "selfUserCode": users.read_yml()['public']['selfUserCode'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "sign": users.read_yml()['public']['sign'],
+                "lang": users.read_yml()['public']['lang'],
+                "type": param1,
+                "contactWay": param3,
+                "content": param2
+                }
+        res_json = ApiTemplate().post_api(path, data, files=files)
+        log.info(f"接口返回参数 : {res_json}")
+        return res_json
