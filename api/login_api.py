@@ -1,14 +1,22 @@
 from lib.api_template import ApiTemplate
 from lib.log_api import log
+from datas.read_yaml import users
+
+
+#
 # 手机号登录模块
 class Login:
+
     # 获取token
     def get_token(self):
         path = '/acc/v1/login/password'
-        data = {"accountName": "13911111015", "password": "qwe123",
-                "sign": "daimaqiankun.sign", "deviceId": "15615615616",
-                "osType": "09",
-                "adId": 8001}
+        data = {"accountName": users.read_yml()['public']['mobile'],
+                "password": "qwe123",
+                "sign": users.read_yml()['public']['sign'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "lang": users.read_yml()['public']['lang'],
+                "osType": users.read_yml()['public']['osType'],
+                "adId": users.read_yml()['public']['adId']}
         res_json = ApiTemplate().post_api(path, data)
         log.info(f"获取用户token: {res_json.get('token')}")
         return res_json.get('token')
@@ -18,11 +26,13 @@ class Login:
         path = '/acc/v1/login/password'
         data = {"accountName": mobile,
                 "password": pwd,
-                "sign": "daimaqiankun.sign",
-                "deviceId": "15615615616",
-                "osType": "09",
-                "adId": 8001}
+                "sign": users.read_yml()['public']['sign'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "lang": users.read_yml()['public']['lang'],
+                "osType": users.read_yml()['public']['osType'],
+                "adId": users.read_yml()['public']['adId']}
         res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回结果为 ：{res_json}")
         return res_json
 
     # 密码特殊符号
@@ -30,11 +40,13 @@ class Login:
         path = '/acc/v1/login/password'
         data = {"accountName": mobile,
                 "password": "@%^&#%^&",
-                "sign": "daimaqiankun.sign",
-                "deviceId": "15615615616",
-                "osType": "09",
-                "adId": 8001}
+                "sign": users.read_yml()['public']['sign'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "lang": users.read_yml()['public']['lang'],
+                "osType": users.read_yml()['public']['osType'],
+                "adId": users.read_yml()['public']['adId']}
         res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回结果为 ：{res_json}")
         return res_json
 
     # 密码为空
@@ -42,11 +54,13 @@ class Login:
         path = '/acc/v1/login/password'
         data = {"accountName": mobile,
                 "password": "      ",
-                "sign": "daimaqiankun.sign",
-                "deviceId": "15615615616",
-                "osType": "09",
-                "adId": 8001}
+                "sign": users.read_yml()['public']['sign'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "lang": users.read_yml()['public']['lang'],
+                "osType": users.read_yml()['public']['osType'],
+                "adId": users.read_yml()['public']['adId']}
         res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回结果为 ：{res_json}")
         return res_json
 
 # if __name__ == '__main__':

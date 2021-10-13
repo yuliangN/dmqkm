@@ -13,14 +13,14 @@ class TestSignnature:
     @allure.story("修改成功签名-数字")
     def test_change_signature(self, user):
         r = self.settings.changeSignature(user)
-        assert  r.get('code') == 1
-        assert  r.get('message') == '操作成功'
+        assert r.get('code') == 1
+        assert r.get('message') == '操作成功'
 
     @allure.story("修改成功签名-文字")
     def test_change_letter(self, user):
         r = self.settings.changeSignatureletter(user)
-        assert  r.get('code') == 1
-        assert  r.get('message') == '操作成功'
+        assert r.get('code') == 1
+        assert r.get('message') == '操作成功'
 
     @allure.story("修改成功签名-特殊符号")
     def test_change_symbol(self, user):

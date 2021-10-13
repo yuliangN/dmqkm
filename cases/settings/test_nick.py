@@ -9,6 +9,7 @@ class TestNick:
     # 初始化设置页
     def setup_class(self):
         self.settings = Settings()
+
     @allure.story("修改失败-昵称敏感字")
     def test_nick_sensitive(self, user):
         r = self.settings.nickSensitiveWord(user)

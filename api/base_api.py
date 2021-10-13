@@ -1,6 +1,7 @@
 import json
-
 import requests
+
+
 class BaseApi:
     # 请求协议，
     def request(self,request:dict):

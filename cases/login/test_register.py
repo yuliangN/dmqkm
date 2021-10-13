@@ -18,6 +18,7 @@ class TestRegister:
     def test_register_succeed(self, mobile):
         r = self.register.register(mobile)
         assert r.get('code') == 1
+        assert r.get('message') == '操作成功'
 
     @allure.story("手机号注册失败-手机号为10位数字")
     @pytest.mark.parametrize('mobile', Yamls().read_user()['data6'])
