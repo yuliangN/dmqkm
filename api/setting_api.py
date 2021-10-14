@@ -1,5 +1,6 @@
 
 from lib.api_template import ApiTemplate
+from lib.gain_files import GainFiles
 from lib.log_api import log
 from datas.read_yaml import users
 
@@ -196,16 +197,28 @@ class Settings:
         log.info(f"接口返回参数 : {res_json}")
         return res_json
 
-    # 反馈与建议上传图片
+        # 反馈与建议上传图片
     def feedback_image(self, data, param1, param2, param3, image):
-        import os
         path = '/review/faceback/insert'
-        base_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-        data_path = os.path.join(base_path, 'datas/image', image)
-        files = {'imageFile1': ('1.jpg', open(data_path, 'rb'), "image/jpeg"),
-                 'imageFile2': ('2.jpg', open(data_path, 'rb'), "image/jpeg"),
-                 'imageFile3': ('3.jpg', open(data_path, 'rb'), "image/jpeg"),
-                 }
+        files = GainFiles().gain_images(image)
+        data = {"token": data,
+                "selfUserCode": users.read_yml()['public']['selfUserCode'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "sign": users.read_yml()['public']['sign'],
+                "lang": users.read_yml()['public']['lang'],
+                "type": param1,
+                "contactWay": param3,
+                "content": param2
+                }
+        res_json = ApiTemplate().post_api(path, data, files=files)
+        log.info(f"接口返回参数 : {res_json}")
+        return res_json
+
+        # 反馈与建议上传图片
+
+    def feedback_more_image(self, data, param1, param2, param3):
+        path = '/review/faceback/insert'
+        files = GainFiles().gain_more_images()
         data = {"token": data,
                 "selfUserCode": users.read_yml()['public']['selfUserCode'],
                 "deviceId": users.read_yml()['public']['deviceId'],
