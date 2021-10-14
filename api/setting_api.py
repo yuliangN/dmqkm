@@ -197,12 +197,15 @@ class Settings:
         return res_json
 
     # 反馈与建议上传图片
-    def feedback_image(self, data, param1, param2, param3):
+    def feedback_image(self, data, param1, param2, param3, image):
         import os
         path = '/review/faceback/insert'
         base_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-        data_path = os.path.join(base_path, 'datas\image', '1.jpg')
-        files = {'imageFile1': ('1.jpg', open(data_path, 'rb'), "image/jpeg"), }
+        data_path = os.path.join(base_path, 'datas/image', image)
+        files = {'imageFile1': ('1.jpg', open(data_path, 'rb'), "image/jpeg"),
+                 'imageFile2': ('2.jpg', open(data_path, 'rb'), "image/jpeg"),
+                 'imageFile3': ('3.jpg', open(data_path, 'rb'), "image/jpeg"),
+                 }
         data = {"token": data,
                 "selfUserCode": users.read_yml()['public']['selfUserCode'],
                 "deviceId": users.read_yml()['public']['deviceId'],
