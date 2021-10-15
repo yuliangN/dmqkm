@@ -215,7 +215,6 @@ class Settings:
         return res_json
 
         # 反馈与建议上传图片
-
     def feedback_more_image(self, data, param1, param2, param3):
         path = '/review/faceback/insert'
         files = GainFiles().gain_more_images()
@@ -229,5 +228,21 @@ class Settings:
                 "content": param2
                 }
         res_json = ApiTemplate().post_api(path, data, files=files)
+        log.info(f"接口返回参数 : {res_json}")
+        return res_json
+
+    # 反馈与建议纯文本
+    def feedback_text1(self, data, param1, param2, param3):
+        path = '/review/faceback/insert'
+        data = {"token": data,
+                "selfUserCode": users.read_yml()['public']['selfUserCode'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "sign": users.read_yml()['public']['sign'],
+                "lang": users.read_yml()['public']['lang'],
+                "type": param1,
+                "contactWay": param3,
+                "content": param2
+                }
+        res_json = ApiTemplate().post_api(path, data)
         log.info(f"接口返回参数 : {res_json}")
         return res_json
