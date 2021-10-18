@@ -246,3 +246,19 @@ class Settings:
         res_json = ApiTemplate().post_api(path, data)
         log.info(f"接口返回参数 : {res_json}")
         return res_json
+
+    # 修改密码
+    def change_password(self, data, param1, param2):
+        path = '/acc/v1/password/modify'
+        data = {"token": data,
+                "selfUserCode": '27423001052446720',
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "sign": users.read_yml()['public']['sign'],
+                "lang": users.read_yml()['public']['lang'],
+                "old": param1,
+                "password": param2,
+                "osType": users.read_yml()['public']['osType']
+                }
+        res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回参数 : {res_json}")
+        return res_json
