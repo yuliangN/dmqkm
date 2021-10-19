@@ -139,6 +139,21 @@ class Settings:
         log.info(f"接口返回结果为 ：{res_json}")
         return res_json
 
+    # 设置地区接口
+    def set_region(self, data, param1, param2):
+        path = '/acc/v1/profile/set'
+        data = {"token": data,
+                "selfUserCode": users.read_yml()['public']['selfUserCode'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "sign": users.read_yml()['public']['sign'],
+                "lang": users.read_yml()['public']['lang'],
+                "province": param1,
+                "city": param2
+                }
+        res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回结果为 ：{res_json}")
+        return res_json
+
     # 实名
     def autonym(self, data, name, idcard):
         path = '/acc/v1/profile/identity'
