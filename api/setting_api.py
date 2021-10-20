@@ -9,14 +9,14 @@ from datas.read_yaml import users
 class Settings:
 
     # 成功-修改昵称
-    def change_nick(self, data):
+    def change_nick(self, data, param1):
         path = '/acc/v1/profile/set'
         data = {"token": data,
                 "selfUserCode": users.read_yml()['public']['selfUserCode'],
                 "deviceId": users.read_yml()['public']['deviceId'],
                 "sign": users.read_yml()['public']['sign'],
                 "lang": users.read_yml()['public']['lang'],
-                "nick": "大宝贝"}
+                "nick": param1}
         res_json = ApiTemplate().post_api(path, data)
         log.info(f"接口返回结果为 ：{res_json}")
         return res_json
@@ -139,7 +139,7 @@ class Settings:
         log.info(f"接口返回结果为 ：{res_json}")
         return res_json
 
-    # 设置地区接口
+    # 设置地区
     def set_region(self, data, param1, param2):
         path = '/acc/v1/profile/set'
         data = {"token": data,
@@ -149,6 +149,20 @@ class Settings:
                 "lang": users.read_yml()['public']['lang'],
                 "province": param1,
                 "city": param2
+                }
+        res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回结果为 ：{res_json}")
+        return res_json
+
+    # 设置出生日期
+    def set_birth_data(self, data, param1):
+        path = '/acc/v1/profile/set'
+        data = {"token": data,
+                "selfUserCode": users.read_yml()['public']['selfUserCode'],
+                "deviceId": users.read_yml()['public']['deviceId'],
+                "sign": users.read_yml()['public']['sign'],
+                "lang": users.read_yml()['public']['lang'],
+                "birth": param1
                 }
         res_json = ApiTemplate().post_api(path, data)
         log.info(f"接口返回结果为 ：{res_json}")
