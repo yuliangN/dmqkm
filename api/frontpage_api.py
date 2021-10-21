@@ -41,19 +41,31 @@ class FrontPage:
         log.info(f"接口返回结果为 ：{res_json}")
         return res_json
 
-    # # 搜索
-    # def search(self, data):
-    #     path = '/game/v1/searchword'
-    #     data = {
-    #         "selfUserCode": users.read_yml()['public']['selfUserCode'],
-    #         "deviceId": users.read_yml()['public']['deviceId'],
-    #         "sign": users.read_yml()['public']['sign'],
-    #         "lang": users.read_yml()['public']['lang'],
-    #         "adId": users.read_yml()['public']['adId'],
-    #         "pageId": data,
-    #         "pageSize": 20,
-    #         "rankId": 4
-    #     }
-    #     res_json = ApiTemplate().post_api(path, data)
-    #     log.info(f"接口返回结果为 ：{res_json}")
-    #     return res_json
+    # 搜索历史与推荐游戏
+    def search(self):
+        path = '/game/v1/searchword'
+        data = {
+            "deviceId": users.read_yml()['public']['deviceId'],
+            "sign": users.read_yml()['public']['sign'],
+            "lang": users.read_yml()['public']['lang'],
+            "adId": users.read_yml()['public']['adId'],
+        }
+        res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回结果为 ：{res_json}")
+        return res_json
+
+    # 搜索游戏
+    def game_search(self, param):
+        path = '/game/v1/search'
+        data = {
+            "deviceId": users.read_yml()['public']['deviceId'],
+            "sign": users.read_yml()['public']['sign'],
+            "lang": users.read_yml()['public']['lang'],
+            "adId": users.read_yml()['public']['adId'],
+            "keyword": param,
+            "pageId": 1,
+            "pageSize": 20,
+        }
+        res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回结果为 ：{res_json}")
+        return res_json
