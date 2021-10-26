@@ -35,7 +35,7 @@ class Settings:
         return res_json
 
     # 失败-昵称敏感词
-    def nickSensitiveWord(self, data):
+    def nickSensitiveWord(self, data, param):
         print(data)
         path = '/acc/v1/profile/set'
         data = {"token": data,
@@ -43,7 +43,7 @@ class Settings:
                 "deviceId": users.read_yml()['public']['deviceId'],
                 "sign": users.read_yml()['public']['sign'],
                 "lang": users.read_yml()['public']['lang'],
-                "nick": "操"}
+                "nick": param}
         res_json = ApiTemplate().post_api(path, data)
         log.info(f"接口返回结果为 ：{res_json}")
         return res_json

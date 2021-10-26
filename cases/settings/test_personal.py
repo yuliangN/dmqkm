@@ -12,8 +12,9 @@ class TestPersonal:
         self.settings = Settings()
 
     @allure.story("修改失败-昵称敏感字")
-    def test_nick_sensitive(self, user):
-        r = self.settings.nickSensitiveWord(user)
+    @pytest.mark.parametrize('param', users.read_personal()['nick'])
+    def test_nick_sensitive(self, user, param):
+        r = self.settings.nickSensitiveWord(user, param)
         assert r.get('code') == 11057
 
     @allure.story("修改失败-昵称为空（后端未做校验）")
