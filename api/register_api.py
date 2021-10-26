@@ -4,9 +4,10 @@ from lib.log_api import log
 from datas.read_yaml import users
 
 
+# 注册模块
 class RegisterApi:
 
-    # 注册成功
+    # 注册
     def register(self, mobile):
         path = '/acc/v1/reg'
         data = {"mobile": mobile,
