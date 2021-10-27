@@ -2,8 +2,8 @@
 import allure
 import pytest
 from datas.read_yaml import users
-
 from api.particulars_api import Particulars
+from lib.config_sql import db
 
 
 @allure.feature("详情页")
@@ -72,5 +72,12 @@ class TestParticulars:
     @pytest.mark.parametrize('param1,param2', users.read_feedback()['mapid9'])
     def test_review_sensitivity(self, user, param1, param2):
         r = self.particulars.review_game(user, param1, param2)
+        assert r.get('code') == 1
+        assert r.get('message') == '操作成功'
+
+    @allure.story("删除评论成功-输入正确的评论id")
+    @pytest.mark.parametrize("param", users.read_feedback()['usercode'])
+    def test_review_detele(self, user, param):
+        r = self.particulars.review_delete(user, param)
         assert r.get('code') == 1
         assert r.get('message') == '操作成功'

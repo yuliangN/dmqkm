@@ -61,10 +61,15 @@ class DB:
     # 重置邮箱
     def reset_email(usercode):
         sql = "update dmqk_account.t_account set email=null where userCode = %s" % usercode
-        return DB.change_db(sql)
+        return DB.query_db(sql)
 
-# if __name__ == '__main__':
-# print(check_mapid('1055'))
-# print(DB.check_mobile(17611523112))\
-#     print(Yamls().read_user()['data6'])
-# print(DB.del_mobile(Yamls().read_user()['data5']))
+    # 返回用户评论游戏的一条数据
+    def review_first(usercode):
+        sql = 'select id from dmqk_review.t_game_comment where user_code = %s ORDER BY id  DESC LIMIT 1' % usercode
+        return DB.query_db(sql)
+
+
+db = DB
+
+if __name__ == '__main__':
+    print(db.review_first('27302859291230208'))
