@@ -81,3 +81,10 @@ class TestParticulars:
         r = self.particulars.review_delete(user, param)
         assert r.get('code') == 1
         assert r.get('message') == '操作成功'
+
+    # @allure.story("评论回复成功-回复有效的从评论信息")
+    # @pytest.mark.parametrize("param", users.read_feedback()['comment'])
+    # def test_review_comment(self, user, param):
+    #     r = self.particulars.review_comment(user, param)
+    #     assert r.get('code') == 1
+    #     assert r.get('message') == '操作成功'

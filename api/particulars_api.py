@@ -7,7 +7,6 @@ from lib.log_api import log
 
 # 游戏详情模块
 class Particulars:
-    pass
 
     # 查询详情页
     def game_particulars(self, data):
@@ -50,11 +49,26 @@ class Particulars:
         log.info(f"接口返回结果为 ：{res_json}")
         return res_json
 
-    # 举报评论
-
     # 回复评论
+    # def review_comment(self, token, param1):
+    #     mapid = db.review_mapid(i)
+    #     path = '/review/game/insert'
+    #     data = {"token": token,
+    #             'deviceId': users.read_yml()['public']['deviceId'],
+    #             "lang": users.read_yml()['public']['lang'],
+    #             "sign": users.read_yml()['public']['sign'],
+    #             "osType": users.read_yml()['public']['osType'],
+    #             "mapId": mapid,
+    #             "parentId": id,
+    #             "content": param1
+    #             }
+    #     res_json = ApiTemplate().post_api(path, data)
+    #     log.info(f"接口返回结果为 ：{res_json}")
+    #     return res_json
 
     # 删除回复
+
+    # 举报评论
 
     # 举报游戏
 
