@@ -35,7 +35,6 @@ class DB:
         cur = conn.cursor()
         cur.execute(sql)
         result = cur.fetchall()
-        logging.debug(result)
         return result
 
     # 查看游戏详情列表
@@ -61,15 +60,25 @@ class DB:
     # 重置邮箱
     def reset_email(usercode):
         sql = "update dmqk_account.t_account set email=null where userCode = %s" % usercode
-        return DB.query_db(sql)
+        return DB.change_db(sql)
 
     # 返回用户评论游戏的一条数据
     def review_first(usercode):
         sql = 'select id from dmqk_review.t_game_comment where user_code = %s ORDER BY id  DESC LIMIT 1' % usercode
         return DB.query_db(sql)
 
+    # 返回不等于该用户的评论父id
+    def review_id(usercode):
+        sql = 'select parent_id from dmqk_review.t_game_comment where user_code != %s ORDER BY id  DESC LIMIT 1 ' % usercode
+        return DB.query_db(sql)
+
+    # 根据parent_id查询用户的mapid并倒序返回给用户最新的一条
+    def review_mapid(parent_id):
+        sql = 'SELECT map_id from dmqk_review.t_game_comment where parent_id = %s ORDER BY map_id DESC LIMIT 1 ' % parent_id
+        return DB.query_db(sql)
+
 
 db = DB
 
-if __name__ == '__main__':
-    print(db.review_first('27302859291230208'))
+# if __name__ == '__main__':
+#     a = db.review_id('27302859291230208')

@@ -14,7 +14,7 @@ class TestRegister:
         DB.del_mobile(Yamls().read_user()['data5'])
 
     @allure.story("手机号注册成功")
-    @pytest.mark.parametrize('mobile', Yamls().read_user()['data7'])
+    @pytest.mark.parametrize('mobile', Yamls().read_user()['data10'])
     def test_register_succeed(self, mobile):
         r = self.register.register(mobile)
         assert r.get('code') == 1
