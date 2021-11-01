@@ -32,4 +32,4 @@ class TestSignnature:
     @allure.story("修改签名失败-敏感字")
     def test_symbol(self, user, datas):
         r = self.settings.changeSignaFail(user, datas)
-        assert r.get('code') == 11058
+        assert r.get('code') == 11057

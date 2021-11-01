@@ -127,8 +127,14 @@ usercode:
 # 回复用户信息
 comment:
   - - 回复评论
-#  - - 123123
-#  - - asdqwe
-#  - - 文字加字母aasd
-#  - - 文字加数字
-#  - - 123aaaaaaa
+  - - 123123
+  - - asdqwe
+  - - 文字加字母aasd
+  - - 文字加数字
+  - - 123aaaaaaa
+
+# 回复信息敏感字
+commentSensitive:
+  - - 习近平
+  - - TMD
+  - - 生殖器
