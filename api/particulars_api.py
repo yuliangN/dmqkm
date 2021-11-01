@@ -50,21 +50,27 @@ class Particulars:
         return res_json
 
     # 回复评论
-    # def review_comment(self, token, param1):
-    #     mapid = db.review_mapid(i)
-    #     path = '/review/game/insert'
-    #     data = {"token": token,
-    #             'deviceId': users.read_yml()['public']['deviceId'],
-    #             "lang": users.read_yml()['public']['lang'],
-    #             "sign": users.read_yml()['public']['sign'],
-    #             "osType": users.read_yml()['public']['osType'],
-    #             "mapId": mapid,
-    #             "parentId": id,
-    #             "content": param1
-    #             }
-    #     res_json = ApiTemplate().post_api(path, data)
-    #     log.info(f"接口返回结果为 ：{res_json}")
-    #     return res_json
+    def review_comment(self, token, param1):
+        usercode = " ".join(map(str, users.read_feedback()['usercode']))
+        # 获取用户的id和评论的父id
+        map_list = db.review_id(usercode[1:-1])
+        if map_list[0][0] == 0:
+            parentId = map_list[0][1]
+        else:
+            parentId = map_list[0][0]
+        path = '/review/game/insert'
+        data = {"token": token,
+                'deviceId': users.read_yml()['public']['deviceId'],
+                "lang": users.read_yml()['public']['lang'],
+                "sign": users.read_yml()['public']['sign'],
+                "osType": users.read_yml()['public']['osType'],
+                "mapId": map_list[0][2],
+                "parentId": parentId,
+                "content": param1
+                }
+        res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回结果为 ：{res_json}")
+        return res_json
 
     # 删除回复
 

@@ -67,15 +67,15 @@ class DB:
         sql = 'select id from dmqk_review.t_game_comment where user_code = %s ORDER BY id  DESC LIMIT 1' % usercode
         return DB.query_db(sql)
 
-    # 返回不等于该用户的评论父id
+    # 返回不等于该用户的评论父id，map_id，parent_id 倒序的第一条数据
     def review_id(usercode):
-        sql = 'select parent_id from dmqk_review.t_game_comment where user_code != %s ORDER BY id  DESC LIMIT 1 ' % usercode
+        sql = 'select parent_id, id, map_id from dmqk_review.t_game_comment where user_code != %s ORDER BY id  DESC LIMIT 1 ' % usercode
         return DB.query_db(sql)
 
     # 根据parent_id查询用户的mapid并倒序返回给用户最新的一条
-    def review_mapid(parent_id):
-        sql = 'SELECT map_id from dmqk_review.t_game_comment where parent_id = %s ORDER BY map_id DESC LIMIT 1 ' % parent_id
-        return DB.query_db(sql)
+    # def review_mapid(parent_id):
+    #     sql = 'SELECT map_id from dmqk_review.t_game_comment where id = %s ORDER BY map_id DESC LIMIT 1 ' % parent_id
+    #     return DB.query_db(sql)
 
 
 db = DB
