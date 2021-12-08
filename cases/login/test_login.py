@@ -35,7 +35,7 @@ class TestLogin:
     def test_loginfail_symbol(self, param1):
         r = self.login.loginfail_symbol(param1)
         assert r.get('code') == 11011
-        assert r.get('message') == '手机号或密码错误'
+        assert r.get('message') == '账号或密码错误'
 
     @allure.story("手机号登录失败-密码为空")
     @pytest.mark.parametrize('param1', (Yamls().read_user()['data4']))
