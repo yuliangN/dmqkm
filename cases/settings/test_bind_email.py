@@ -19,12 +19,12 @@ class TestBindEmail:
         assert r.get('code') == 1
         assert r.get('message') == '操作成功'
 
-    @allure.story("发送邮箱失败-邮箱已绑定")
+    @allure.story("发送邮箱成功-邮箱已绑定")
     @pytest.mark.parametrize('data', users.read_user()['email2'])
     def test_send_is_bind(self, user, data):
         r = self.settings.send_bind_email(user, data)
-        assert r.get('code') == 11027
-        assert r.get('message') == '该邮箱已绑定，请更换邮箱'
+        assert r.get('code') == 1
+        assert r.get('message') == '操作成功'
 
     @allure.story("发送邮箱失败-不符合邮箱格式规范")
     @pytest.mark.parametrize('data', users.read_user()['email3'])
@@ -67,18 +67,18 @@ class TestBindEmail:
     def test_code_error(self, user, email):
         r = self.settings.bind_email(user, email)
         assert r.get('code') == 11033
-        assert r.get('message') == '验证码输入错误'
+        assert r.get('message') == '验证码错误'
 
     @allure.story("邮箱绑定失败-邮箱包含中文")
     @pytest.mark.parametrize('email', users.read_user()['email5'])
     def test_bind_email_text(self, user, email):
         r = self.settings.bind_email(user, email)
         assert r.get('code') == 11033
-        assert r.get('message') == '验证码输入错误'
+        assert r.get('message') == '验证码错误'
 
     @allure.story("邮箱绑定失败-邮箱为空")
     @pytest.mark.parametrize('email', users.read_user()['email4'])
     def test_bind_null(self, user, email):
         r = self.settings.bind_email(user, email)
         assert r.get('code') == 11033
-        assert r.get('message') == '验证码输入错误'
+        assert r.get('message') == '验证码错误'
