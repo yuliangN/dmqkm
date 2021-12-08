@@ -38,8 +38,8 @@ class TestRegister:
     @pytest.mark.parametrize('mobile', Yamls().read_user()['data7'])
     def test_registerFail_exist(self, mobile):
         r = self.register.registerFail_exist(mobile)
-        assert r.get('code') == 11019
-        assert r.get('message') == '该手机号已注册，请直接登录或更换手机号！'
+        assert r.get('code') == 1
+        assert r.get('message') == '操作成功'
 
     # @allure.story("验证码校验失败-验证码已过期")
     # @pytest.mark.parametrize('mobile', Yamls().read_user()['data7'])
@@ -53,7 +53,7 @@ class TestRegister:
     def test_code_exist(self, mobile):
         r = self.register.text_message(mobile)
         assert r.get('code') == 11033
-        assert r.get('message') == '验证码输入错误'
+        assert r.get('message') == '验证码错误'
 
     @allure.story("发送验证码成功")
     def test_code_succeed(self, phone):

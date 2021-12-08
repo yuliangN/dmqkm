@@ -72,11 +72,10 @@ class DB:
         sql = 'select parent_id, id, map_id from dmqk_review.t_game_comment where user_code != %s ORDER BY id  DESC LIMIT 1 ' % usercode
         return DB.query_db(sql)
 
-    # 根据parent_id查询用户的mapid并倒序返回给用户最新的一条
-    # def review_mapid(parent_id):
-    #     sql = 'SELECT map_id from dmqk_review.t_game_comment where id = %s ORDER BY map_id DESC LIMIT 1 ' % parent_id
-    #     return DB.query_db(sql)
-
+    # 根据usercode获取最新一条回复信息
+    def reply_id(usercode):
+        sql = 'SELECT id FROM dmqk_review.t_game_comment where user_code = %s AND parent_id > 0 ORDER BY id DESC LIMIT 1' % usercode
+        return DB.query_db(sql)
 
 db = DB
 

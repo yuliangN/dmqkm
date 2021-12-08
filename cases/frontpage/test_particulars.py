@@ -95,3 +95,16 @@ class TestParticulars:
         r = self.particulars.review_comment(user, param)
         assert r.get('code') == 1
         assert r.get('message') == '操作成功'
+
+    @allure.story('删除回复信息成功')
+    def test_reply_remove(self, user):
+        id = db.reply_id(users.read_yml()['public']['selfUserCode'])
+        r = self.particulars.delete_reply(user, id)
+        assert r.get('code') == 1
+        assert r.get('message') == '操作成功'
+
+    @allure.story('删除回复信息失败-数据不存在')
+    def test_reply_nonexistent(self, user):
+        r = self.particulars.delete_reply(user, id=4537)
+        assert r.get('code') == 26004
+        assert r.get('message') == '数据不存在'

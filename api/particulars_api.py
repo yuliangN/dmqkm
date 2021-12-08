@@ -73,15 +73,36 @@ class Particulars:
         return res_json
 
     # 删除回复
+    def delete_reply(self, token, id):
+        log.info(f"要删除的评论id为： {id}")
+        path = '/review/game/remove'
+        data = {"token": token,
+                'deviceId': users.read_yml()['public']['deviceId'],
+                "lang": users.read_yml()['public']['lang'],
+                "sign": users.read_yml()['public']['sign'],
+                "osType": users.read_yml()['public']['osType'],
+                "id": id
+                }
+        res_json = ApiTemplate().post_api(path, data)
+        log.info(f"接口返回结果为 ：{res_json}")
+        return res_json
 
     # 举报评论
+    def report_comments(self):
+        pass
 
     # 举报游戏
+    def report_game(self):
+        pass
 
     # 喜欢游戏
-
-    # 投票
+    def like_game(self):
+        pass
 
     # 房间
+    def room(self):
+        pass
 
     # 分享
+    def share(self):
+        pass
