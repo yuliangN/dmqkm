@@ -4,6 +4,7 @@ import allure
 from api.register_api import RegisterApi
 from datas.read_yaml import Yamls
 from lib.config_sql import DB
+from lib.md5_api import Md5Api
 
 
 @allure.feature("注册页")
@@ -14,23 +15,24 @@ class TestRegister:
         DB.del_mobile(Yamls().read_user()['data5'])
 
     @allure.story("手机号注册成功")
-    @pytest.mark.parametrize('mobile', Yamls().read_user()['data10'])
-    def test_register_succeed(self, mobile):
-        r = self.register.register(mobile)
+    @pytest.mark.parametrize('mobile,pwd', Yamls().read_user()['data10'])
+    def test_register_succeed(self, mobile, pwd):
+        pwds = Md5Api().get_password(pwd)
+        r = self.register.register(mobile, pwds)
         assert r.get('code') == 1
         assert r.get('message') == '操作成功'
 
     @allure.story("手机号注册失败-手机号为10位数字")
-    @pytest.mark.parametrize('mobile', Yamls().read_user()['data6'])
-    def test_registerFail_format(self, mobile):
-        r = self.register.register(mobile)
+    @pytest.mark.parametrize('mobile,pwd', Yamls().read_user()['data6'])
+    def test_registerFail_format(self, mobile, pwd):
+        r = self.register.register(mobile, pwd)
         assert r.get('code') == 11017
         assert r.get('message') == '手机号格式错误'
 
     @allure.story("手机号注册失败-手号包含特殊符号")
-    @pytest.mark.parametrize('mobile', Yamls().read_user()['data8'])
-    def test_joint_letter(self, mobile):
-        r = self.register.register(mobile)
+    @pytest.mark.parametrize('mobile,pwd', Yamls().read_user()['data8'])
+    def test_joint_letter(self, mobile, pwd):
+        r = self.register.register(mobile, pwd)
         assert r.get('code') == 11017
         assert r.get('message') == '手机号格式错误'
 

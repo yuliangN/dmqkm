@@ -8,10 +8,10 @@ from datas.read_yaml import users
 class RegisterApi:
 
     # 注册
-    def register(self, mobile):
+    def register(self, mobile, pwd):
         path = '/acc/v1/reg'
         data = {"mobile": mobile,
-                "password": "qwe123",
+                "password": pwd,
                 "sign": "daimaqiankun.sign",
                 "deviceId": "15615615616",
                 "osType": "09",
